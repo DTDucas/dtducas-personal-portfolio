@@ -1,0 +1,711 @@
+/* ====================================
+   Wood Element Professional Theme
+   Colors optimized for Mệnh Mộc
+   ==================================== */
+
+/* Override Bootstrap Variables */
+:root {
+  /* Wood Element Professional Palette */
+  --primary-forest: #2D5016 !important;
+  --primary-sage: #3E6B1F !important;
+  --secondary-green: #87A96B !important;
+  --secondary-light: #9CB86F !important;
+  --accent-wood: #8B4513 !important;
+  --accent-light: #A0522D !important;
+  --support-mint: #E8F5E8 !important;
+  --support-cream: #F5F5DC !important;
+  --text-charcoal: #2F4F2F !important;
+  --text-light: #5A6B5A !important;
+  --white: #cbe6fc !important;
+  --shadow-soft: rgba(45, 80, 22, 0.1) !important;
+  --shadow-medium: rgba(45, 80, 22, 0.2) !important;
+  --shadow-strong: rgba(45, 80, 22, 0.3) !important;
+
+  /* Override Bootstrap Primary Colors */
+  --yellow: #F2B705 !important;
+  --blue: #3E6B1F !important;
+  --primary: #3E6B1F !important;
+  --secondary: #87A96B !important;
+  --success: #2D5016 !important;
+  --warning: #F2B705 !important;
+  --dark: #2F4F2F !important;
+}
+
+/* ====================================
+   Global Overrides - Force Wood Colors
+   ==================================== */
+
+/* Override body background and text */
+body {
+  color: var(--text-charcoal) !important;
+  background-color: #2F2F2F !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Override all yellow/orange colors with wood sage green */
+.text-warning,
+.btn-warning,
+.badge-warning,
+.alert-warning {
+  color: var(--primary-forest) !important;
+  background-color: var(--secondary-light) !important;
+}
+
+/* Force navbar colors */
+.ftco_navbar,
+.navbar {
+  background: linear-gradient(135deg, var(--primary-forest), var(--primary-sage)) !important;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.ftco_navbar .navbar-brand,
+.navbar-brand {
+  color: var(--white) !important;
+  font-weight: 600;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.ftco_navbar .navbar-brand:hover,
+.navbar-brand:hover {
+  color: var(--secondary-light) !important;
+}
+
+.ftco_navbar .navbar-nav .nav-link,
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+  position: relative;
+  padding: 0.8rem 1.2rem !important;
+  transition: color 0.3s ease;
+}
+
+.ftco_navbar .navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:hover {
+  color: var(--white) !important;
+}
+
+/* Professional underline effect */
+.ftco_navbar .navbar-nav .nav-link::after,
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--secondary-light);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-50%);
+}
+
+.ftco_navbar .navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link:hover::after {
+  width: 80%;
+}
+
+/* Force override all yellow/orange accent colors */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-forest) !important;
+}
+
+.subheading,
+.text-warning,
+.text-yellow {
+  color: var(--primary-sage) !important;
+  font-weight: 600;
+}
+
+/* Hero Section Enhancements */
+.hero-wrap {
+  position: relative;
+  background: linear-gradient(135deg, #2F2F2F 0%, #1a1a1a 50%, #2F2F2F 100%) !important;
+}
+
+.hero-wrap::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--support-mint), var(--support-cream));
+  opacity: 0.05;
+  z-index: 1;
+}
+
+.hero-wrap .text {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-wrap .text h1 {
+  color: var(--white) !important;
+  font-weight: 700;
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 4px rgba(45, 80, 22, 0.3);
+}
+
+.hero-wrap .text h2 {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: 400;
+}
+
+.hero-wrap .text .subheading {
+  color: var(--secondary-light) !important;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* Typography rotation colors */
+.txt-rotate {
+  color: var(--secondary-light) !important;
+}
+
+.txt-rotate > .wrap {
+  border-right: 0.08em solid var(--primary-sage) !important;
+}
+
+/* ====================================
+   Section Styling
+   ==================================== */
+
+/* About Section */
+.ftco-about .img-about {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ftco-about .img-about:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 8px 25px var(--shadow-soft);
+}
+
+.ftco-about .img-about::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, var(--primary-forest), var(--primary-sage), var(--secondary-green));
+  opacity: 0.1;
+  transition: opacity 0.3s ease;
+}
+
+.ftco-about .img-about:hover::after {
+  opacity: 0.2;
+}
+
+.ftco-about .about-info li {
+  color: var(--text-charcoal);
+  border-bottom: 1px solid rgba(135, 169, 107, 0.2);
+  padding: 0.8rem 0;
+}
+
+.ftco-about .about-info li span:first-child {
+  color: var(--primary-sage);
+  font-weight: 600;
+}
+
+.ftco-about .btn-primary {
+  background: linear-gradient(45deg, var(--primary-forest), var(--primary-sage), var(--secondary-green));
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ftco-about .btn-primary:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 12px 35px var(--shadow-medium);
+  background: linear-gradient(225deg, var(--primary-forest), var(--primary-sage), var(--secondary-green));
+}
+
+/* ====================================
+   Resume Section
+   ==================================== */
+
+#navi ul li a {
+  color: var(--text-charcoal);
+  font-weight: 500;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+#navi ul li a:hover {
+  background: rgba(135, 169, 107, 0.1);
+  color: var(--primary-sage);
+  transform: translateX(5px);
+}
+
+#navi ul li a.current {
+  background: var(--primary-sage);
+  color: var(--white);
+  box-shadow: 0 4px 12px rgba(62, 107, 31, 0.3);
+}
+
+.resume-wrap {
+  border-left: 2px solid rgba(135, 169, 107, 0.3);
+  padding: 2rem 0 2rem 3rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.resume-wrap:hover {
+  border-left-color: var(--primary-sage);
+  transform: translateX(5px);
+}
+
+.resume-wrap .icon {
+  background: var(--primary-sage);
+  color: var(--white);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: -25px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.resume-wrap .icon:hover {
+  transform: translateY(-2px) scale(1.1);
+  box-shadow: 0 8px 25px var(--shadow-soft);
+  background: var(--secondary-green);
+}
+
+.resume-wrap h2 {
+  color: var(--primary-forest);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.resume-wrap .position {
+  color: var(--primary-sage);
+  font-weight: 500;
+}
+
+.resume-wrap .date {
+  color: var(--text-light);
+  font-style: italic;
+}
+
+/* ====================================
+   Skills Section
+   ==================================== */
+
+.skills-grid .skill-item {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: rgba(232, 245, 232, 0.5);
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(135, 169, 107, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skills-grid .skill-item:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 25px var(--shadow-soft);
+  border-color: var(--secondary-green);
+  box-shadow: 0 0 20px rgba(135, 169, 107, 0.2);
+}
+
+.skills-grid .skill-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  filter: grayscale(20%);
+  transition: all 0.3s ease;
+}
+
+.skills-grid .skill-item:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.skills-grid .skill-item .skill-name {
+  color: var(--primary-forest);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.skills-grid .skill-item .skill-level {
+  height: 6px;
+  background: rgba(135, 169, 107, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.skills-grid .skill-item .skill-progress {
+  height: 100%;
+  background: linear-gradient(45deg, var(--primary-forest), var(--primary-sage), var(--secondary-green));
+  border-radius: 3px;
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: skillLoad 2s ease-out forwards;
+}
+
+@keyframes skillLoad {
+  from { width: 0; }
+  to { width: var(--skill-width); }
+}
+
+/* ====================================
+   Projects Section - Wood Theme
+   ==================================== */
+
+.services-1 {
+  background: var(--white) !important;
+  border-radius: 15px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  border: 1px solid rgba(135, 169, 107, 0.2) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.services-1:hover {
+  transform: translateY(-8px) scale(1.02) !important;
+  box-shadow: 0 15px 45px var(--shadow-medium) !important;
+  border-color: var(--primary-sage) !important;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.services-1 .icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, var(--primary-forest), var(--primary-sage), var(--secondary-green)) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: var(--white) !important;
+  font-size: 2rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.services-1:hover .icon {
+  transform: translateY(-4px) scale(1.1) !important;
+  box-shadow: 0 12px 30px var(--shadow-strong) !important;
+}
+
+.services-1 h3 {
+  color: var(--primary-forest) !important;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.services-1 p {
+  color: var(--text-light) !important;
+  line-height: 1.6;
+}
+
+.services-1 p strong {
+  color: var(--primary-sage) !important;
+  font-weight: 600;
+}
+
+/* About Section Enhanced */
+.ftco-about .img-about {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 3px solid var(--secondary-green) !important;
+}
+
+.ftco-about .img-about:hover {
+  transform: translateY(-5px) scale(1.02) !important;
+  box-shadow: 0 15px 40px var(--shadow-medium) !important;
+  border-color: var(--primary-sage) !important;
+}
+
+.ftco-about .about-info li {
+  color: var(--text-charcoal) !important;
+  border-bottom: 1px solid rgba(135, 169, 107, 0.3) !important;
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.ftco-about .about-info li:hover {
+  background: rgba(232, 245, 232, 0.1);
+  transform: translateX(5px);
+}
+
+.ftco-about .about-info li span:first-child {
+  color: var(--primary-sage) !important;
+  font-weight: 600;
+  min-width: 100px;
+  display: inline-block;
+}
+
+.ftco-about .btn-primary {
+  background: linear-gradient(45deg, var(--primary-forest), var(--primary-sage), var(--secondary-green)) !important;
+  border: none !important;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--white) !important;
+}
+
+.ftco-about .btn-primary:hover {
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 12px 35px var(--shadow-strong) !important;
+  background: linear-gradient(225deg, var(--primary-forest), var(--primary-sage), var(--secondary-green)) !important;
+}
+
+.project-tech .tech-tag {
+  display: inline-block;
+  background: rgba(135, 169, 107, 0.1);
+  color: var(--primary-sage);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  margin: 0.2rem;
+  font-weight: 500;
+}
+
+.project-achievements .achievement-item {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* ====================================
+   Contact Section
+   ==================================== */
+
+.contact-info .box {
+  background: var(--white);
+  border-radius: 12px;
+  border: 1px solid rgba(135, 169, 107, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-info .box:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 25px var(--shadow-soft);
+  border-color: var(--secondary-green);
+  box-shadow: 0 0 20px rgba(135, 169, 107, 0.1);
+}
+
+.contact-info .box .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, var(--primary-forest), var(--primary-sage), var(--secondary-green));
+  color: var(--white);
+  font-size: 1.5rem;
+  margin: 0 auto 1rem;
+}
+
+.contact-info .box h3 {
+  color: var(--primary-forest);
+  font-weight: 600;
+}
+
+.contact-info .box p a {
+  color: var(--primary-sage);
+  text-decoration: none;
+}
+
+.contact-info .box p a:hover {
+  color: var(--secondary-green);
+  text-decoration: underline;
+}
+
+.contact-form {
+  background: rgba(232, 245, 232, 0.3) !important;
+  border-radius: 15px;
+}
+
+.contact-form .form-control {
+  border: 2px solid rgba(135, 169, 107, 0.2);
+  border-radius: 8px;
+  padding: 12px 15px;
+  color: var(--text-charcoal);
+  transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+  border-color: var(--primary-sage);
+  box-shadow: 0 0 0 0.2rem rgba(62, 107, 31, 0.25);
+  outline: none;
+}
+
+.contact-form .form-control:hover {
+  border-color: var(--secondary-green);
+  box-shadow: 0 0 20px rgba(135, 169, 107, 0.1);
+}
+
+.contact-form .btn-primary {
+  background: linear-gradient(45deg, var(--primary-forest), var(--primary-sage), var(--secondary-green));
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form .btn-primary:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 12px 35px var(--shadow-medium);
+}
+
+/* ====================================
+   Footer
+   ==================================== */
+
+.ftco-footer {
+  background: var(--primary-forest);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.ftco-footer .ftco-heading-2 {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.ftco-footer .ftco-footer-social li a {
+  background: rgba(135, 169, 107, 0.2);
+  color: var(--white);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ftco-footer .ftco-footer-social li a:hover {
+  background: var(--secondary-green);
+  color: var(--white);
+  transform: translateY(-2px) scale(1.1);
+  box-shadow: 0 8px 25px var(--shadow-soft);
+}
+
+.ftco-footer .list-unstyled li a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+}
+
+.ftco-footer .list-unstyled li a:hover {
+  color: var(--secondary-light);
+  transform: translateX(5px);
+}
+
+/* ====================================
+   Scroll Animations
+   ==================================== */
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ====================================
+   Loading Animation
+   ==================================== */
+
+.loading-spinner .path {
+  stroke: var(--primary-sage) !important;
+}
+
+/* ====================================
+   Professional Enhancements
+   ==================================== */
+
+/* Enhanced magnific popup */
+.mfp-wood-theme .mfp-bg {
+  background: rgba(45, 80, 22, 0.8);
+}
+
+.mfp-wood-theme .mfp-close {
+  color: var(--white);
+}
+
+/* Professional form validation */
+.form-control.error {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.error-message {
+  background: rgba(220, 53, 69, 0.1);
+  border: 1px solid rgba(220, 53, 69, 0.3);
+  color: #721c24;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+}
+
+/* Enhanced skill hover effects */
+.skill-hover {
+  filter: drop-shadow(0 4px 8px rgba(62, 107, 31, 0.2));
+}
+
+/* Professional focus states */
+.focused {
+  transform: translateY(-2px);
+}
+
+/* Enhanced navbar scrolled state */
+.ftco_navbar.scrolled {
+  background: rgba(45, 80, 22, 0.98) !important;
+  box-shadow: 0 2px 20px rgba(45, 80, 22, 0.2);
+}
+
+/* ====================================
+   Responsive Adjustments
+   ==================================== */
+
+@media (max-width: 768px) {
+  .hero-wrap .text h1 {
+    font-size: 2.5rem;
+  }
+
+  .services-1 {
+    margin-bottom: 2rem;
+  }
+
+  .resume-wrap {
+    padding-left: 2rem;
+  }
+
+  #navi ul li a {
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-wrap .text h1 {
+    font-size: 2rem;
+  }
+
+  .contact-info .box {
+    margin-bottom: 1.5rem;
+  }
+
+  .ftco_navbar .navbar-brand {
+    font-size: 1.5rem;
+  }
+}

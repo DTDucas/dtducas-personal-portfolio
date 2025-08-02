@@ -1,0 +1,106 @@
+dtducas-personal-portfolio/
+│
+├── .github/
+│   
+│   └── workflows/
+│       
+│       └── deploy.yml
+├── css/
+│   
+│   ├── bootstrap/
+│   │   
+│   │   ├── bootstrap-grid.css
+│   │   └── bootstrap-reboot.css
+│   ├── ajax-loader.gif
+│   ├── animate.css
+│   ├── aos.css
+│   ├── bootstrap.min.css
+│   ├── custom-theme.css
+│   ├── custom-theme.module.scss
+│   ├── flaticon.css
+│   ├── icomoon.css
+│   ├── magnific-popup.css
+│   ├── owl.carousel.min.css
+│   ├── owl.theme.default.min.css
+│   └── style.css
+├── data/
+│   
+│   └── config.json
+├── fonts/
+│   
+│   ├── flaticon/
+│   │   
+│   │   ├── font/
+│   │   │   
+│   │   │   ├── Flaticon.eot
+│   │   │   ├── Flaticon.svg
+│   │   │   ├── Flaticon.ttf
+│   │   │   ├── Flaticon.woff
+│   │   │   ├── Flaticon.woff2
+│   │   │   ├── _flaticon.scss
+│   │   │   ├── flaticon.css
+│   │   │   └── flaticon.html
+│   │   ├── license/
+│   │   │   
+│   │   │   ├── license.html
+│   │   │   └── license.pdf
+│   │   └── backup.txt
+│   ├── icomoon/
+│   │   
+│   │   ├── icomoon.eot
+│   │   ├── icomoon.svg
+│   │   ├── icomoon.ttf
+│   │   └── icomoon.woff
+│   └── mustardo/
+│       
+│       ├── mustardo-webfont.woff
+│       └── mustardo-webfont.woff2
+├── images/
+│   
+│   ├── projects/
+│   │   
+│   │   ├── dms-acc.jpg
+│   │   └── etabs-revit.jpg
+│   ├── skills/
+│   │   
+│   │   ├── bootstrap.png
+│   │   ├── c.png
+│   │   ├── cplusplus.png
+│   │   ├── csharp.png
+│   │   ├── css.png
+│   │   ├── dart.png
+│   │   ├── firebase.png
+│   │   ├── flutter.png
+│   │   ├── html.png
+│   │   ├── illustrator.png
+│   │   ├── java.png
+│   │   ├── javascript.png
+│   │   ├── lightroom.png
+│   │   ├── linux.png
+│   │   ├── mongo.png
+│   │   ├── node.png
+│   │   ├── photoshop.png
+│   │   └── react.png
+│   ├── about.jpeg
+│   ├── avatar.jpg
+│   └── dtducas.png
+├── js/
+│   
+│   ├── aos.js
+│   ├── app.js
+│   ├── bootstrap.min.js
+│   ├── data-loader.js
+│   ├── jquery-3.2.1.min.js
+│   ├── jquery-migrate-3.0.1.min.js
+│   ├── jquery.animateNumber.min.js
+│   ├── jquery.magnific-popup.min.js
+│   ├── jquery.min.js
+│   ├── jquery.stellar.min.js
+│   ├── jquery.waypoints.min.js
+│   ├── main.js
+│   ├── owl.carousel.min.js
+│   ├── particles.min.js
+│   └── scrollax.min.js
+├── .gitignore
+├── README.md
+└── index.html
